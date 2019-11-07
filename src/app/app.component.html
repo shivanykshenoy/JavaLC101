@@ -1,0 +1,83 @@
+<ngb-carousel *ngIf="images" [showNavigationIndicators]="false" [interval]="slideInterval" [pauseOnHover]="true"
+              class="text-center" [keyboard]="true">
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img class="courseLogo" [src]="images[0]" alt="Launch Code">
+    </div>
+    <div>
+      <h1>{{courseTitle}}</h1>
+      <h2>Nov 7<sup>th</sup>, 2019</h2>
+    </div>
+  </ng-template>
+  <ng-template  ngbSlide>
+    <div>
+      <h1 class="display-4">About me</h1>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>{{instructor.name}}</h3>
+          <div class="card mx-auto" style="width: 20rem;">
+            <img class="card-img-top" [src]="images[1]" [alt]="instructor.name" >
+            <div class="card-body">
+              <h5 class="card-title">{{instructor.jobTitle}}</h5>
+              <p class="card-text">{{instructor.bio}}</p>
+              <a [href]="instructor.profile" class="btn btn-success">Profile</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <img [src]="images[2]" style="width: 100%;">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <a href="https://delivery.panerabread.com"><img [src]="images[6]" style="width: 100%;"></a>
+      </div>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div>
+      <h1 class="display-1">{{subTitle}} <img [src]="images[7]" style="width:100px;" ></h1>
+      <ul class="list-group">
+        <li *ngFor="let reason of reasons" class="list-group-item"><h3 class="display-4">{{reason}}</h3></li>
+      </ul>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div>
+      <h1 class="display-1"> Object Oriented Programming </h1>
+      <h3 class="display-3"> A <b><u>Class</u></b> is the <b><u>Blueprint</u></b> of an <b><u>Object</u></b></h3>
+      <img class="courseLogo" [src]="images[8]" alt="Blue Print">
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div>
+      <h1 class="display-1"> {{setup}}</h1>
+      <ul class="list-group">
+        <li *ngFor="let step of steps; let i = index;" class="list-group-item"><h3 class="display-4">{{i + 1}}. {{step}}</h3></li>
+      </ul>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div>
+      <h1 class="display-1"> Static vs. Dynamic Typing</h1>
+      <br>
+      <p class="display-4">Dynamic typing...in...JavaScript </p>
+      <p class="display-4">
+        <code>
+          let it = 'Bob';
+        </code>
+      </p>
+      <h2 class="display-4" style="padding-top: 100px;">Static typing...in...Java </h2>
+      <p class="display-4">
+        <code>
+          Person it = new Person(); <br>
+          it.name = "Bob";
+        </code>
+      </p>
+    </div>
+  </ng-template>
+</ngb-carousel>
+<router-outlet></router-outlet>

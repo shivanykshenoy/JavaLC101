@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'slideshow'`, () => {
+  it(`should have as title 'JavaLC101'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('slideshow');
+    expect(app.title).toEqual('JavaLC101');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('slideshow app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('JavaLC101 app is running!');
   });
 });

@@ -16,7 +16,8 @@ export class AppComponent {
     'assets/images/iOSApp.png',
     'assets/images/delivery.png',
     'assets/images/javaLogo.png',
-    'assets/images/classBlueprint.png'];
+    'assets/images/classBlueprint.png',
+    'assets/images/javac.png'];
 
   instructor = {
     name: 'Shivany Shenoy',

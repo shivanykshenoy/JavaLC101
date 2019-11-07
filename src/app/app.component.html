@@ -9,7 +9,7 @@
       <h2>Nov 7<sup>th</sup>, 2019</h2>
     </div>
   </ng-template>
-  <ng-template  ngbSlide>
+  <ng-template ngbSlide>
     <div>
       <h1 class="display-4">About me</h1>
     </div>
@@ -19,7 +19,7 @@
         <div class="col-md-4">
           <h3>{{instructor.name}}</h3>
           <div class="card mx-auto" style="width: 20rem;">
-            <img class="card-img-top" [src]="images[1]" [alt]="instructor.name" >
+            <img class="card-img-top" [src]="images[1]" [alt]="instructor.name">
             <div class="card-body">
               <h5 class="card-title">{{instructor.jobTitle}}</h5>
               <p class="card-text">{{instructor.bio}}</p>
@@ -39,7 +39,7 @@
   </ng-template>
   <ng-template ngbSlide>
     <div>
-      <h1 class="display-1">{{subTitle}} <img [src]="images[7]" style="width:100px;" ></h1>
+      <h1 class="display-1">{{subTitle}} <img [src]="images[7]" style="width:100px;"></h1>
       <ul class="list-group">
         <li *ngFor="let reason of reasons" class="list-group-item"><h3 class="display-4">{{reason}}</h3></li>
       </ul>
@@ -56,8 +56,12 @@
     <div>
       <h1 class="display-1"> {{setup}}</h1>
       <ul class="list-group">
-        <li *ngFor="let step of steps; let i = index;" class="list-group-item"><h3 class="display-4">{{i + 1}}. {{step}}</h3></li>
+        <li *ngFor="let step of steps; let i = index;" class="list-group-item"><h3 class="display-4">{{i + 1}}
+          . {{step}}</h3></li>
       </ul>
+      <h3 class="display-4" style="padding-top: 100px;"><a
+        href="https://education.launchcode.org/java-web-development/chapters/introduction-and-setup/setup.html"
+        target="_blank">Java Setup Documentation </a></h3>
     </div>
   </ng-template>
   <ng-template ngbSlide>
@@ -77,6 +81,28 @@
           it.name = "Bob";
         </code>
       </p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div>
+      <h1 class="display-1"> Java Compilation </h1>
+      <img class="courseLogo" [src]="images[9]" alt="Blue Print">
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div>
+      <h1 class="display-1"> Java Syntax</h1>
+      <h3 class="display-3" style="padding-top: 150px;"> Java has some strict naming conventions. <br>
+        <a
+          href="https://education.launchcode.org/java-web-development/chapters/introduction-and-setup/naming-conventions.html"
+          target="_blank">Let's go over them!...</a>
+      </h3>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div>
+      <h1 class="display-1" style="padding-top: 200px;"> Exercise </h1>
+      <h3 class="display-2" style="padding-top: 100px;"> Let's build in Java </h3>
     </div>
   </ng-template>
 </ngb-carousel>

@@ -1,0 +1,230 @@
+<ngb-carousel [showNavigationIndicators]="false" [interval]="slideInterval" [pauseOnHover]="true"
+              class="text-center" [keyboard]="true">
+  <ng-template ngbSlide>
+    <div>
+      <h1 class="display-1" style="padding-top: 200px;"> Control Flow and Collections </h1>
+      <br>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="container">
+      <h1> If Statement </h1>
+      <br>
+      <h2>
+        <div class="alert-secondary">
+          <code>
+            if (isFlatTire) {{ "{" }} goToTireShop(); {{ "}" }}
+          </code>
+        </div>
+      </h2>
+      <br>
+      <h1> If Else </h1>
+      <br>
+      <h2>
+        <div class="alert-secondary">
+          <img src="assets/images/ifElse.png" style="width: 100%">
+        </div>
+      </h2>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="container">
+      <h1> If Statement </h1>
+      <br>
+      <h2>
+        <div class="alert-secondary">
+          <code>
+            if (isFlatTire) {{ "{" }} goToTireShop(); {{ "}" }}
+          </code>
+        </div>
+      </h2>
+      <br>
+      <h1> If Else </h1>
+      <br>
+      <h2>
+        <div class="alert-secondary">
+          <img src="assets/images/ifElse.png" style="width: 100%">
+        </div>
+      </h2>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="container">
+      <h1> If Else If Statement </h1>
+      <br>
+      <h2>
+        <div class="alert-secondary">
+          <i>Always good practice to have an else condition as a catch all!</i>
+        </div>
+      </h2>
+      <h2>
+        <div class="alert-secondary">
+          <img src="assets/images/ifElseIf.png" style="width: 100%">
+        </div>
+      </h2>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="container">
+      <h1> Switch Statement </h1>
+      <br>
+      <h2>
+        <div class="alert-info">
+          <i>Switch statement with a default!</i>
+        </div>
+      </h2>
+      <br>
+      <h2>
+        <div class="alert-secondary">
+          <img src="assets/images/switchStatement.png" style="width: 100%">
+        </div>
+      </h2>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="container">
+      <h1> While Statement </h1>
+      <br>
+      <h2>
+        <div class="alert-success">
+          <i>While vs. Do While? Which is more common?</i>
+        </div>
+      </h2>
+      <br>
+      <h2>
+        <div class="alert-secondary">
+          <img src="assets/images/whileLoop.png" style="width: 100%">
+        </div>
+      </h2>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="container">
+      <h1> While Statement with an Infinite Loop </h1>
+      <br>
+      <h2>
+        <div class="alert-danger">
+          <i>InfiniteLoop = A Stuck Program!</i>
+        </div>
+      </h2>
+      <br>
+      <h2>
+        <div class="alert-secondary">
+          <img src="assets/images/InfiniteLoop.png" style="width: 100%">
+        </div>
+      </h2>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="container">
+      <h1> Do While loop! </h1>
+      <br>
+      <h2>
+        <div class="alert-success">
+          <i>A do while loop evaulates the expression at the bottom. Such that the statements are executed at least
+            once!</i>
+        </div>
+      </h2>
+      <br>
+      <h2>
+        <div class="alert-secondary">
+          <img src="assets/images/doWhileLoop.png" style="width: 100%">
+        </div>
+      </h2>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="container">
+      <h1> The ForLoop! </h1>
+      <br>
+      <h2>
+        <div class="alert-success">
+          <i>Provides a compact way to iterate over a range of values!</i>
+        </div>
+        <br>It consists of...
+        <ol class="text-left">
+          <li>Initialization</li>
+          <li>Termination if the expression evaluates to false</li>
+          <li>You can increment or decrement a value</li>
+        </ol>
+      </h2>
+      <br>
+      <h2>
+        <div class="alert-secondary">
+          <img src="assets/images/forLoopExample.png" style="width: 100%">
+        </div>
+      </h2>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="container">
+      <h1> Branching statements </h1>
+      <br>
+      <h1>
+        <br>
+        <ol class="text-left">
+          <li>the <code>break</code> statement</li>
+          <li>the <code>continue</code> statement</li>
+          <li>the <code>return</code> statement</li>
+        </ol>
+      </h1>
+      <br>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="container">
+      <h1> Arrays </h1>
+      <br>
+      <h2>
+        <div class="alert-success">
+          <i>An array holds <b>fixed</b> number of elements!</i>
+        </div>
+      </h2>
+      <br>
+      <h2>
+        <div>
+          <img src="assets/images/arrays.gif" style="width: 70%">
+        </div>
+      </h2>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="container">
+      <h1> ArrayList </h1>
+      <br>
+      <h2>
+        <div class="alert-success">
+          <i>An ArrayList is <b>dynamic</b> and grows according to the number of elements added</i>
+        </div>
+      </h2>
+      <br>
+      <h2>
+        <div>
+          <img src="assets/images/ArrayList.png" style="width: 70%">
+        </div>
+      </h2>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="container">
+      <h1> HashMap </h1>
+      <br>
+      <h2>
+        <div class="alert-success">
+          <i>A HashMap is a <b>dynamic</b> collection of <b>Key:Value</b> pairs </i>
+        </div>
+      </h2>
+      <br>
+      <h2>
+          <div class="row" >
+            <div class="col-6" style="border: 1px solid black;">key</div>
+            <div class="col-6" style="border: 1px solid black;">value</div>
+          </div>
+          <div class="row" *ngFor="let item of hashMapList" >
+            <div class="col-6" style="border: 1px solid black;">name</div>
+            <div class="col-6" style="border: 1px solid black;">"{{item.name}}"</div>
+          </div>
+      </h2>
+    </div>
+  </ng-template>
+</ngb-carousel>

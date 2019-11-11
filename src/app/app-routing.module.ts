@@ -6,6 +6,8 @@ import {Lesson2Component} from './lesson2/lesson2.component';
 
 const routes: Routes = [
   {path: 'lesson2', component: Lesson2Component},
+  {path: 'JavaLC101/lesson2', component: Lesson2Component},
+  {path: 'JavaLC101', component: IntroComponent},
   {path: '', component: IntroComponent}
 ];
 

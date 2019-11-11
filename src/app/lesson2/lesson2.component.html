@@ -1,0 +1,128 @@
+<ngb-carousel [showNavigationIndicators]="false" [interval]="slideInterval" [pauseOnHover]="true"
+              class="text-center" [keyboard]="true">
+  <ng-template ngbSlide>
+    <div>
+      <h1 class="display-1" style="padding-top: 200px;"> Lesson 2 - Data Types</h1>
+      <br>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div>
+      <h1> Static vs. Dynamic Typing</h1>
+      <br>
+      <p class="display-4">Dynamic typing...in...JavaScript </p>
+      <p class="display-4">
+        <code>
+          let it = {{ "{" }}
+          name: 'Pizza',
+          calories: 560
+          {{ "}" }};
+        </code>
+      </p>
+      <h2 class="display-4" style="padding-top: 100px;">Static typing...in...Java </h2>
+      <p class="display-4">
+        <code>
+          Food it = new Food(); <br>
+          it.name = "Pizza"; <br>
+          it.calories = 560;
+        </code>
+      </p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div>
+      <h1> String(s)</h1>
+      <br>
+      <p class="display-4">Single vs. Double Quotation Marks</p>
+      <p class="display-4">
+        <code>
+          String str = "12345"; <br>
+          char charVariable = '1';
+        </code>
+      </p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="container">
+      <h1> What can you do with Strings?</h1>
+      <br>
+      <div class="row text-left" *ngFor="let method of stringMethods" style="border: 1px solid black">
+        <div class="col-6">
+          <h3><code>{{method.name}}</code></h3>
+        </div>
+        <div class="col-6">
+          <h3>{{method.description}}</h3>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="container">
+      <h1> Primitive Types</h1>
+      <br>
+      <div class="row text-left" *ngFor="let type of primitiveTypes" style="border: 1px solid black">
+        <div class="col-4">
+          <h3><code>{{type.name}}</code></h3>
+        </div>
+        <div class="col-4">
+          <h3><code>{{type.example}}</code></h3>
+        </div>
+        <div class="col-4">
+          <h3>{{type.description}}</h3>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="container">
+      <h1> Primitive type to Object Type </h1>
+      <br>
+      <div class="alert-success">
+        <h2>
+          int —> Integer
+          <hr>
+          float —> Float
+          <hr>
+          double —> Double
+          <hr>
+          char —> Char
+          <hr>
+          boolean —> Boolean
+          <hr>
+        </h2>
+      </div>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div>
+      <h3 class="display-4" style="padding-top: 200px;"> Java provides boiler plate static methods! </h3>
+      <br>
+      <h4></h4>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <br>
+    <div class="container">
+      <iframe src="https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Math.html" width=1200 height=700></iframe>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div>
+      <h3 class="display-4" style="padding-top: 200px;"> <i>Static means all instances inherit the same functionality</i></h3>
+      <br>
+      <h4></h4>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div>
+      <h2 class="display-1" style="padding-top: 200px;"> Class Exercises </h2>
+      <br>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div>
+      <h2 class="display-1" style="padding-top: 200px;"> Studio: Area of a Circle </h2>
+      <br>
+    </div>
+  </ng-template>
+</ngb-carousel>

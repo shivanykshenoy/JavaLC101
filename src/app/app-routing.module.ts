@@ -12,7 +12,7 @@ const routes: Routes = [
   {path: 'lesson3', component: Lesson3Component},
   {path: 'JavaLC101/lesson3', component: Lesson3Component},
   {path: 'intellij-tips', component: IntellijTipsComponent},
-  {path: 'JavaLC101/intellij=tips', component: IntellijTipsComponent},
+  {path: 'JavaLC101/intellij-tips', component: IntellijTipsComponent},
   {path: 'JavaLC101', component: IntroComponent},
   {path: '', component: IntroComponent}
 ];

@@ -8,6 +8,7 @@ import { IntroComponent } from './intro/intro.component';
 import { Lesson2Component } from './lesson2/lesson2.component';
 import { Lesson3Component } from './lesson3/lesson3.component';
 import { IntellijTipsComponent } from './intellij-tips/intellij-tips.component';
+import { Lesson4Component } from './lesson4/lesson4.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { IntellijTipsComponent } from './intellij-tips/intellij-tips.component';
     IntroComponent,
     Lesson2Component,
     Lesson3Component,
-    IntellijTipsComponent
+    IntellijTipsComponent,
+    Lesson4Component
   ],
   imports: [
     BrowserModule,

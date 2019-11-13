@@ -11,8 +11,8 @@ const routes: Routes = [
   {path: 'JavaLC101/lesson2', component: Lesson2Component},
   {path: 'lesson3', component: Lesson3Component},
   {path: 'JavaLC101/lesson3', component: Lesson3Component},
-  {path: 'intellij-tips', component: IntellijTipsComponent},
-  {path: 'JavaLC101/intellij-tips', component: IntellijTipsComponent},
+  {path: 'intellij', component: IntellijTipsComponent},
+  {path: 'JavaLC101/intellij', component: IntellijTipsComponent},
   {path: 'JavaLC101', component: IntroComponent},
   {path: '', component: IntroComponent}
 ];

@@ -1,0 +1,155 @@
+<ngb-carousel [showNavigationIndicators]="false" [interval]="slideInterval" [pauseOnHover]="true"
+              class="text-center" [keyboard]="true">
+  <ng-template ngbSlide>
+    <div>
+      <h1 class="display-3 title-slide">Lesson 5 - Classes and Objects, Part 2! </h1>
+      <br>
+    </div>
+  </ng-template>
+
+  <ng-template ngbSlide>
+    <div class="title-slide">
+      <h1 class="display-3"> Returning a value from a method </h1>
+      <br>
+      <h2 class="display-4">Remember: <code>void</code> methods don't return any value!</h2>
+    </div>
+  </ng-template>
+
+  <ng-template ngbSlide>
+    <div class="title-slide">
+      <h1 class="display-3"> Non void methods </h1>
+      <br>
+      <h2 class="display-4">Any method not declared void, must return a value!</h2>
+      <br>
+      <h3><code>return someValue;</code></h3>
+    </div>
+  </ng-template>
+
+  <ng-template ngbSlide>
+    <div class="title-slide">
+      <h1 class="display-3"><code>this</code> keyword </h1>
+      <br>
+      <h2 class="display-4"><code>this</code> refers to the current object!</h2>
+      <br>
+    </div>
+  </ng-template>
+
+  <ng-template ngbSlide>
+    <div class="container">
+      <h2 class="display-3">Access Modifiers </h2>
+      <br>
+      <h3>
+        <table class="table table-dark">
+          <thead>
+          <tr>
+            <td>Modifier</td>
+            <td>Class</td>
+            <td>Package</td>
+            <td>Subclass</td>
+            <td>World</td>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>
+              public
+            </td>
+            <td>
+              Y
+            </td>
+            <td>
+              Y
+            </td>
+            <td>
+              Y
+            </td>
+            <td>
+              Y
+            </td>
+          </tr>
+          <tr>
+            <td>
+              protected
+            </td>
+            <td>
+              Y
+            </td>
+            <td>
+              Y
+            </td>
+            <td>
+              Y
+            </td>
+            <td>
+              N
+            </td>
+          </tr>
+          <tr>
+            <td>
+              default
+            </td>
+            <td>
+              Y
+            </td>
+            <td>
+              Y
+            </td>
+            <td>
+              N
+            </td>
+            <td>
+              N
+            </td>
+          </tr>
+          <tr>
+            <td>
+              private
+            </td>
+            <td>
+              Y
+            </td>
+            <td>
+              N
+            </td>
+            <td>
+              N
+            </td>
+            <td>
+              N
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </h3>
+    </div>
+  </ng-template>
+
+  <ng-template ngbSlide>
+    <div class="title-slide">
+      <h1 class="display-4"><code>static</code> means value is unchanging <br> All object instances of the class derive the same value!</h1>
+      <br>
+    </div>
+  </ng-template>
+
+  <ng-template ngbSlide>
+    <div class="title-slide">
+      <h1 class="display-4"><code>final</code> means value can only be defined once. <br><i>Upon initialization.</i> </h1>
+      <br>
+    </div>
+  </ng-template>
+
+  <ng-template ngbSlide>
+    <div class="title-slide">
+      <h1 class="display-4"><code>toString</code> override! </h1>
+      <br>
+    </div>
+  </ng-template>
+
+  <ng-template ngbSlide>
+    <div class="title-slide">
+      <h1 class="display-4"><code>equals</code> override! </h1>
+      <br>
+    </div>
+  </ng-template>
+
+</ngb-carousel>

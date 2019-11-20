@@ -10,6 +10,7 @@ import { Lesson3Component } from './lesson3/lesson3.component';
 import { IntellijTipsComponent } from './intellij-tips/intellij-tips.component';
 import { Lesson4Component } from './lesson4/lesson4.component';
 import { Lesson5Component } from './lesson5/lesson5.component';
+import { Lesson6Component } from './lesson6/lesson6.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { Lesson5Component } from './lesson5/lesson5.component';
     Lesson3Component,
     IntellijTipsComponent,
     Lesson4Component,
-    Lesson5Component
+    Lesson5Component,
+    Lesson6Component
   ],
   imports: [
     BrowserModule,

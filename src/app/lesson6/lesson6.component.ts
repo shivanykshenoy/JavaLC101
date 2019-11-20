@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lesson6.component.less']
 })
 export class Lesson6Component implements OnInit {
-
+  slideInterval = 300000;
   constructor() { }
 
   ngOnInit() {

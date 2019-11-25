@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Lesson7Component implements OnInit {
 
-  slideInterva = 300000;
+  slideInterval = 300000;
   constructor() { }
 
   ngOnInit() {

@@ -13,6 +13,7 @@ import { Lesson5Component } from './lesson5/lesson5.component';
 import { Lesson6Component } from './lesson6/lesson6.component';
 import { Lesson7Component } from './lesson7/lesson7.component';
 import { Lesson8Component } from './lesson8/lesson8.component';
+import { Lesson9Component } from './lesson9/lesson9.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { Lesson8Component } from './lesson8/lesson8.component';
     Lesson5Component,
     Lesson6Component,
     Lesson7Component,
-    Lesson8Component
+    Lesson8Component,
+    Lesson9Component
   ],
   imports: [
     BrowserModule,

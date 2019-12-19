@@ -1,0 +1,95 @@
+<ngb-carousel [showNavigationIndicators]="false" [interval]="slideInterval" [pauseOnHover]="true"
+              class="text-center" [keyboard]="true">
+  <ng-template ngbSlide>
+    <div>
+      <h1 class="display-3 title-slide">Lesson 11 - <b><code>Model Classes & Model Binding</code></b></h1>
+      <br>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div>
+      <h1 class="display-3 title-slide">Quick review!</h1>
+    </div>
+  </ng-template>
+
+  <ng-template ngbSlide>
+    <div>
+      <h1 class="display-3 title-slide">What is the MVC pattern?</h1>
+    </div>
+  </ng-template>
+  <img src="assets/images/SFdgC.png" class="image-sm">
+  <ng-template ngbSlide>
+    <div>
+      <h1 class="display-3">What is the MVC pattern?</h1>
+      <img src="assets/images/SFdgC.png" class="image-sm">
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div>
+      <h1 class="display-3 title-slide">What is a View in the MVC pattern? </h1>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="container">
+      <h2>Connecting a View with Controller: </h2>
+      <div class="row">
+        <div class="col-md-12">
+          <img src="assets/images/helloWorldController.png" class="image-lg">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="assets/images/helloWorldView.png" class="image-lg">
+        </div>
+        <div class="col-md-6">
+          <img src="assets/images/helloWorldHtml.png" class="image-lg">
+        </div>
+      </div>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div>
+      <h1 class="display-3 title-slide">What is ThymeLeaf? </h1>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div>
+      <h3 class="display-3">A Java Templating Engine </h3>
+      <div class="row">
+        <div class="col-sm-3" *ngFor="let tag of thymeLeafTagList"><h4>{{tag}}</h4></div>
+      </div>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div>
+      <h2 class="display-4">MVC Putting it together</h2>
+      <img src="assets/images/MVC-putting-it-together.png" class="image-lg">
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="container">
+      <h2 class="display-3">Why do we need models?</h2>
+      <h2 class="display-4">
+        <ul class="text-left">
+          <li *ngFor="let model of modelsUsedFor">{{model}}</li>
+        </ul>
+      </h2>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div>
+      <h1 class="display-3 title-slide">Examples of Models!</h1>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div>
+      <h1 class="display-3 title-slide">Role of @ModelAttribute</h1>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div>
+      <h1 class="display-3 title-slide">Class Studio: Spa User Signup!</h1>
+    </div>
+  </ng-template>
+
+</ngb-carousel>
